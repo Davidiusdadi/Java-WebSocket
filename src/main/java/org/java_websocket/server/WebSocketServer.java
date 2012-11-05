@@ -198,6 +198,8 @@ public abstract class WebSocketServer extends WebSocketAdapter implements Runnab
 
 				}
 				selectorthread.interrupt();
+				selector.wakeup();
+				selectorthread.interrupt();
 				selectorthread.join();
 			}
 			if( decoders != null ) {
