@@ -81,7 +81,7 @@ public class SSLClientExample {
 
 		SSLSocketFactory factory = sslContext.getSocketFactory();// (SSLSocketFactory) SSLSocketFactory.getDefault();
 
-		chatclient.setSocket( factory.createSocket() );
+		chatclient.setSocket( factory.createSocket() ); 
 
 		chatclient.connectBlocking();
 
